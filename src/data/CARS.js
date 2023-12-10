@@ -10,12 +10,12 @@ const CARS = [
             ford1,
             ford2,
         ],
-        carName: "Ford Raptor",
+        carName: 'Ford Raptor',
         carModel: 2021,
         carSeater: 4,
-        oilType: "Unleaded",
-        fuelEfficiency: "6.1km / 1-litre",
-        carType: "Automatic",
+        oilType: 'Unleaded',
+        fuelEfficiency: '6.1km / 1-litre',
+        carType: 'Automatic',
         monthlyPayment: 440
     },
     {
@@ -24,12 +24,12 @@ const CARS = [
             civic1,
             civic2
         ],
-        carName: "Honda Civic Type R",
+        carName: 'Honda Civic Type R',
         carModel: 2023,
         carSeater: 4,
-        oilType: "Hybrid",
-        fuelEfficiency: "6.1km / 1-litre",
-        carType: "Manual",
+        oilType: 'Hybrid',
+        fuelEfficiency: '6.1km / 1-litre',
+        carType: 'Manual',
         monthlyPayment: 440
     },
     {
@@ -37,12 +37,12 @@ const CARS = [
         carImage: [
             ford1,
         ],
-        carName: "Ford Raptor",
+        carName: 'Ford Raptor',
         carModel: 2021,
         carSeater: 4,
-        oilType: "Unleaded",
-        fuelEfficiency: "6.1km / 1-litre",
-        carType: "Automatic",
+        oilType: 'Unleaded',
+        fuelEfficiency: '6.1km / 1-litre',
+        carType: 'Automatic',
         monthlyPayment: 440
     },
     {
@@ -50,12 +50,12 @@ const CARS = [
         carImage: [
             civic1,
         ],
-        carName: "Honda Civic Type R",
+        carName: 'Honda Civic Type R',
         carModel: 2023,
         carSeater: 4,
-        oilType: "Hybrid",
-        fuelEfficiency: "6.1km / 1-litre",
-        carType: "Manual",
+        oilType: 'Hybrid',
+        fuelEfficiency: '6.1km / 1-litre',
+        carType: 'Manual',
         monthlyPayment: 440
     },
     {
@@ -63,12 +63,12 @@ const CARS = [
         carImage: [
             ford1,
         ],
-        carName: "Ford Raptor",
+        carName: 'Ford Raptor',
         carModel: 2021,
         carSeater: 4,
-        oilType: "Unleaded",
-        fuelEfficiency: "6.1km / 1-litre",
-        carType: "Automatic",
+        oilType: 'Unleaded',
+        fuelEfficiency: '6.1km / 1-litre',
+        carType: 'Automatic',
         monthlyPayment: 440
     },
     {
@@ -76,12 +76,12 @@ const CARS = [
         carImage: [
             civic1,
         ],
-        carName: "Honda Civic Type R",
+        carName: 'Honda Civic Type R',
         carModel: 2023,
         carSeater: 4,
-        oilType: "Hybrid",
-        fuelEfficiency: "6.1km / 1-litre",
-        carType: "Manual",
+        oilType: 'Hybrid',
+        fuelEfficiency: '6.1km / 1-litre',
+        carType: 'Manual',
         monthlyPayment: 440
     },
 ];

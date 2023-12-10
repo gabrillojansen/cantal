@@ -1,7 +1,7 @@
-import React from 'react'
-import { LuUserPlus2, LuUserCheck2 } from "react-icons/lu";
-import { IoCarSportOutline } from "react-icons/io5";
-import { SlNote } from "react-icons/sl";
+import React from 'react';
+import { LuUserPlus2, LuUserCheck2 } from 'react-icons/lu';
+import { IoCarSportOutline } from 'react-icons/io5';
+import { SlNote } from 'react-icons/sl';
 
 const steps = [
     {

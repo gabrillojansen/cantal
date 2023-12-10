@@ -1,7 +1,7 @@
-import React from 'react'
-import { PiFacebookLogoBold } from "react-icons/pi";
-import { FaInstagram } from "react-icons/fa";
-import { FiTwitter } from "react-icons/fi";
+import React from 'react';
+import { PiFacebookLogoBold } from 'react-icons/pi';
+import { FaInstagram } from 'react-icons/fa';
+import { FiTwitter } from 'react-icons/fi';
 
 export const Footer = () => {
   return (
