@@ -9,7 +9,7 @@ export const FeaturedCars = () => {
   return (
     <div className='max-w-[1200px] h-[100vh] m-auto px-4'>
         <div className='flex items-center justify-between'>
-            <h1 className='text-4xl font-extrabold'>Featured Cars</h1>
+            <h1 className='text-3xl text-[#2C3E50] font-extrabold'>Featured Cars</h1>
             <div className='flex  items-center gap-2 transition-[.3s] hover:mr-[-10px]'>
                 <p className='flex items-center gap-2 text-sm cursor-pointer'>View more</p>
                 <FaLongArrowAltRight/>
