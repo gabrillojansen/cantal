@@ -4,7 +4,6 @@ import { FaRegUser } from 'react-icons/fa';
 import { IoIosArrowDown } from 'react-icons/io';
 
 export const Header = () => {
-    const [isLinkActive, setIsLinkActive] = useState('Home');
     const [showHeaderShadow, setShowHeaderShadow] = useState(false);
 
     const handleHeaderShadow = () => {
@@ -16,31 +15,21 @@ export const Header = () => {
     }
     window.addEventListener('scroll', handleHeaderShadow);
 
-    const headerLinks =[
-        {link: 'Home', to: '/'},
-        {link: 'Explore Cars', to: '/explore-cars'},
-        {link: 'Help Center'},
-        {link: 'Pages'}
-    ];
-
   return (
-    <div className={`w-full bg-[--header] fixed z-[1] transition-[.3s] ${showHeaderShadow ? "shadow" : ""}`}>
+    <div className={`w-full bg-[--header] fixed top-0 z-[1] transition-[.3s] ${showHeaderShadow ? "shadow" : ""}`}>
         <header className="max-w-[1200px] m-auto flex items-center justify-between p-4">
-            <div
-            onClick={() => window.scrollTo(0, 0)}
-            className="cursor-pointer">Cantal.</div>
-            <ul className="hidden lg:flex gap-4">
-                {headerLinks.map((headLinks, index) => {
-                    return <Link
-                    to={headLinks.to}
-                    onClick={() => setIsLinkActive(headLinks.link)}
-                    className={`flex items-center text-[13px] text-[--header-links] font-bold tracking-wide cursor-pointer transition-[.3s] hover:text-[--header-item-hover] relative
-                    ${isLinkActive === headLinks.link ? "text-[#27AE60]" : ""}`}>
-                        <hr className={`${
-                        isLinkActive === headLinks.link ? "absolute w-[30px] h-1 bg-[#27AE60] bottom-[-4px] rounded-lg" : ""}`} />
-                        {headLinks.link} {index === 0 || index === 1 || index === 3 ? <IoIosArrowDown className="text-[--header-links]"/> : null}
-                    </Link>
-                })}
+            <div className="cursor-pointer">Cantal.</div>
+            <ul className="flex gap-8 text-sm">
+                <Link to="/">Home</Link>
+                <li className="flex items-center gap-1 group cursor-pointer relative">Explore Cars <IoIosArrowDown/>
+                    <ul className="hidden absolute top-5 group-hover:block">
+                        <Link to="/explore-cars" className="cursor-pointer">Explore One</Link>
+                        <li className="cursor-pointer">Explore Two</li>
+                        <li className="cursor-pointer">Explore Three</li>
+                    </ul>
+                </li>
+                <li>Help Center</li>
+                <li>Pages</li>
             </ul>
             <div className="flex items-center gap-4">
                 <button

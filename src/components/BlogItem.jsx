@@ -1,6 +1,6 @@
 import React from 'react'
-import { MdOutlineDateRange } from "react-icons/md";
-import { FaRegComments } from "react-icons/fa";
+import { MdOutlineDateRange } from 'react-icons/md';
+import { FaRegComments } from 'react-icons/fa';
 
 export const BlogItem = (props) => {
     const { image, title, date, comment } = props.blogData;

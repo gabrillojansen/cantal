@@ -36,14 +36,14 @@ const CantalItem = (props) => {
     }
 
   return (
-    <div className="w-full bg-[#FDFEFE] p-4 rounded-xl shadow-lg">
+    <div className="w-full bg-[#EAECEE] p-4 rounded-xl border border-solid border-[#FDFEFE] shadow-lg">
         <div className="relative flex items-center justify-between group overflow-hidden">
             <button
             onClick={handlePreviousButton}
-            className="absolute left-[-40px] p-2 bg-[#EAECEE] rounded-lg transition-[1s] group-hover:left-0"
+            className="absolute left-[-40px] p-2 bg-[#EAECEE] border border-solid border-[#FDFEFE] rounded-lg transition-[1s] group-hover:left-0"
             ><FaLongArrowAltLeft/></button>  
             <div className="rounded-xl duration-500">
-                <img src={carImage[currentImageIndex]} alt="" className="w-full h-full rounded-xl duration-500"/>
+                <img src={carImage[currentImageIndex]} alt="" className="w-full h-[250px] rounded-xl"/>
                 <div className="hidden group-hover:flex gap-1 absolute bottom-6 m-auto left-1/2 transform -translate-x-1/2">
                     {carImage.map((_, index) => (
                         <div onClick={() => setCurrentImageIndex(index)} className="cursor-pointer">
@@ -54,7 +54,7 @@ const CantalItem = (props) => {
             </div>
             <button
             onClick={handleNextButton}
-            className="absolute right-[-40px] p-2 bg-[#EAECEE] rounded-lg transition-[1s] group-hover:right-0"
+            className="absolute right-[-40px] p-2 bg-[#EAECEE] border border-solid border-[#FDFEFE] rounded-lg transition-[1s] group-hover:right-0"
             ><FaLongArrowAltRight/></button>
         </div>
         <div>
