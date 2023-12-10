@@ -34,11 +34,11 @@ export const Footer = () => {
                 </div>
                 <div>
                     <h3 className="text-[#2C3E50] font-semibold mb-2">Follow Us</h3>
-                    <div className="flex flex-col gap-2">
-                        <PiFacebookLogoBold className="text-[#566573] duration-300 hover:text-[#52BE80] cursor-pointer"/>
-                        <FaInstagram className="text-[#566573] duration-300 hover:text-[#52BE80] cursor-pointer"/>
-                        <FiTwitter className="text-[#566573] duration-300 hover:text-[#52BE80] cursor-pointer"/>
-                    </div>
+                    <ul className="flex flex-col gap-2">
+                        <li className="flex items-center gap-1 text-[13px] text-[#566573] duration-300 hover:text-[#52BE80] cursor-pointer"><PiFacebookLogoBold/>Facebook</li> 
+                        <li className="flex items-center gap-1 text-[13px] text-[#566573] duration-300 hover:text-[#52BE80] cursor-pointer"><FaInstagram/>Instagram</li>
+                        <li className="flex items-center gap-1 text-[13px] text-[#566573] duration-300 hover:text-[#52BE80] cursor-pointer"><FiTwitter/>Twitter</li>
+                    </ul>
                 </div>
             </div>
             <div className="w-full flex justify-center mt-32">
