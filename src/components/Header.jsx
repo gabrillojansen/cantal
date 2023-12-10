@@ -18,7 +18,10 @@ export const Header = () => {
   return (
     <div className={`w-full bg-[--header] fixed top-0 z-[1] transition-[.3s] ${showHeaderShadow ? "shadow" : ""}`}>
         <header className="max-w-[1200px] m-auto flex items-center justify-between p-4">
-            <div className="cursor-pointer">Cantal.</div>
+            <div
+            onClick={() => window.scrollTo(0, 0)}
+            className="cursor-pointer"
+            >Cantal.</div>
             <ul className="flex gap-8 text-sm">
                 <Link to="/">Home</Link>
                 <li className="flex items-center gap-1 group cursor-pointer relative">Explore Cars <IoIosArrowDown/>
