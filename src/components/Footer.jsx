@@ -15,7 +15,7 @@ export const Footer = () => {
                        offers its consumers an attractive and fun selection.</p>
                 </div>
                 <div>
-                    <h3 className="text-[#2C3E50] font-semibold mb-2">Company</h3>
+                    <h3 className="font-semibold text-[#2C3E50] mb-2">Company</h3>
                     <ul className="text-xs flex flex-col gap-2">
                         <li className="duration-300 hover:text-[#52BE80] cursor-pointer">About us</li>
                         <li className="duration-300 hover:text-[#52BE80] cursor-pointer">Pricing plans</li>
@@ -24,7 +24,7 @@ export const Footer = () => {
                     </ul>
                 </div>
                 <div>
-                    <h3 className="text-[#2C3E50] font-semibold mb-2">Support</h3>
+                    <h3 className="font-semibold text-[#2C3E50] mb-2">Support</h3>
                     <ul className="text-xs flex flex-col gap-2">
                         <li  className="duration-300 hover:text-[#52BE80] cursor-pointer">Help center</li>
                         <li  className="duration-300 hover:text-[#52BE80] cursor-pointer">Ask a question</li>
@@ -33,7 +33,7 @@ export const Footer = () => {
                     </ul>
                 </div>
                 <div>
-                    <h3 className="text-[#2C3E50] font-semibold mb-2">Follow Us</h3>
+                    <h3 className="font-semibold text-[#2C3E50] mb-2">Follow Us</h3>
                     <ul className="flex flex-col gap-2">
                         <li className="flex items-center gap-1 text-[13px] text-[#566573] duration-300 hover:text-[#52BE80] cursor-pointer"><PiFacebookLogoBold/>Facebook</li> 
                         <li className="flex items-center gap-1 text-[13px] text-[#566573] duration-300 hover:text-[#52BE80] cursor-pointer"><FaInstagram/>Instagram</li>
@@ -44,7 +44,7 @@ export const Footer = () => {
             <div className="w-full flex justify-center mt-32">
                 <span className="text-xs">
                     <a href="https://www.facebook.com/gabrillojansen"
-                    className="text-[#2C3E50] font-semibold">©gabrillojansen. </a>All rigths reserved
+                    className="font-semibold text-[#2C3E50]">©gabrillojansen. </a>All rigths reserved
                 </span>
             </div>
         </div>

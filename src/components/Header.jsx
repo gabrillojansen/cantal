@@ -33,7 +33,7 @@ export const Header = () => {
             </ul>
             <div className="flex items-center gap-4">
                 <button
-                className="text-[13px] bg-[--header-btn-bg] text-[--header-btn-text] py-2 px-4 rounded transition-[.3s] hover:bg-[--header-item-hover]">Explore Cars</button>
+                className="text-[13px] text-[--header-btn-text] bg-[--header-btn-bg] py-2 px-4 rounded transition-[.3s] hover:bg-[--header-item-hover]">Explore Cars</button>
                 <div className="p-2 bg-[--header-user-bg] shadow-xl rounded group">
                     <FaRegUser className="text-[--header-user-text] transition-[.3s] group-hover:text-[--header-item-hover]"/>
                 </div>
