@@ -7,7 +7,7 @@ export const Footer = () => {
   return (
     <footer className="w-full bg-[white] mt-32">
         <div className="max-w-[1200px] m-auto flex flex-col items-center px-4 py-16">
-            <div className="w-full flex justify-between">
+            <div className="w-full xl:flex justify-between lg:grid grid-cols-3">
                 <div>
                     <h1 className="text-3xl text-[#2C3E50] font-semibold mb-2">Cantal</h1>
                     <p className="text-sm">Search for cheap rental cars in Philippines. <br />
