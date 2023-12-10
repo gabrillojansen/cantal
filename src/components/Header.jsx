@@ -28,7 +28,7 @@ export const Header = () => {
             <div
             onClick={() => window.scrollTo(0, 0)}
             className="cursor-pointer">Cantal.</div>
-            <ul className="flex gap-4">
+            <ul className="hidden lg:flex flex gap-4">
                 {headerLinks.map((headLinks, index) => {
                     return <li
                     onClick={() => setIsLinkActive(headLinks.link)}
