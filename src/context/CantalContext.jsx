@@ -1,10 +1,11 @@
 import React, { createContext } from 'react'
 import CARS from '../data/CARS'
+import blogData from '../data/blogData';
 
 export const CantalContext = createContext(null);
 
 export const CantalProvider = (props) => {
-    const CantalContextValue = {CARS}
+    const CantalContextValue = {CARS, blogData}
 
   return (
     <div>

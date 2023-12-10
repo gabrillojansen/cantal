@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
 import { FaLongArrowAltRight } from 'react-icons/fa';
 import { CantalContext } from '../context/CantalContext';
 import CantalItem from './CantalCar';
@@ -11,7 +12,10 @@ export const FeaturedCars = () => {
         <div className="flex items-center justify-between">
             <h1 className="text-3xl text-[#2C3E50] font-extrabold">Featured Cars</h1>
             <div className="flex  items-center gap-2 transition-[.3s] hover:mr-[-10px]">
-                <p className="flex items-center gap-2 text-sm cursor-pointer">View more</p>
+                <Link
+                to="/explore-cars"
+                onClick={() => window.scrollTo(0, 0)}
+                ><p className="flex items-center gap-2 text-sm cursor-pointer">View more</p></Link>
                 <FaLongArrowAltRight/>
             </div>
         </div>

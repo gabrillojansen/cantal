@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { FaRegUser } from 'react-icons/fa';
 import { IoIosArrowDown } from 'react-icons/io';
 
@@ -16,8 +17,8 @@ export const Header = () => {
     window.addEventListener('scroll', handleHeaderShadow);
 
     const headerLinks =[
-        {link: 'Home'},
-        {link: 'Explore Cars'},
+        {link: 'Home', to: '/'},
+        {link: 'Explore Cars', to: '/explore-cars'},
         {link: 'Help Center'},
         {link: 'Pages'}
     ];
@@ -28,16 +29,17 @@ export const Header = () => {
             <div
             onClick={() => window.scrollTo(0, 0)}
             className="cursor-pointer">Cantal.</div>
-            <ul className="hidden lg:flex flex gap-4">
+            <ul className="hidden lg:flex gap-4">
                 {headerLinks.map((headLinks, index) => {
-                    return <li
+                    return <Link
+                    to={headLinks.to}
                     onClick={() => setIsLinkActive(headLinks.link)}
                     className={`flex items-center text-[13px] text-[--header-links] font-bold tracking-wide cursor-pointer transition-[.3s] hover:text-[--header-item-hover] relative
                     ${isLinkActive === headLinks.link ? "text-[#27AE60]" : ""}`}>
                         <hr className={`${
                         isLinkActive === headLinks.link ? "absolute w-[30px] h-1 bg-[#27AE60] bottom-[-4px] rounded-lg" : ""}`} />
                         {headLinks.link} {index === 0 || index === 1 || index === 3 ? <IoIosArrowDown className="text-[--header-links]"/> : null}
-                    </li>
+                    </Link>
                 })}
             </ul>
             <div className="flex items-center gap-4">
