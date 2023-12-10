@@ -28,7 +28,7 @@ const steps = [
 
 export const GetStarted = () => {
   return (
-    <div className="max-w-[1200px] m-auto px-4 mt-32">
+    <div className="mt-32 m-auto px-4 sm:max-w-[640px] md:lg:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1200px]">
         <h1 className='text-3xl text-[#2C3E50] font-extrabold'>Get started with 4 simple steps</h1>
         <div className="w-full grid gap-8 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 mt-8">
             {steps.map((step) => {
