@@ -16,7 +16,7 @@ export const FeaturedCars = () => {
             </div>
         </div>
         <div className="w-full flex items-center justify-center mt-[3rem]">
-          <div className="grid xl:grid-cols-3 gap-8 lg:grid-cols-2 sm:grid-cols-1">
+          <div className="grid xl:grid-cols-3 gap-8 lg:grid-cols-2 md:grid-cols-1">
             {CARS.map((CAR) => {
               return <CantalItem carData={CAR}/>
             })}
